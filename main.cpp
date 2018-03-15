@@ -7,7 +7,19 @@
 /// The sum of these multiples is 23.
 ///
 /// Find the sum of all the multiples of 3 or 5 below 1000.
-int main() 
+
+///The euler_1 main function
+int main()
 {
-  std::cout << "123456\n";
+  std::vector<int> numbers;
+  int number = 1000;
+  for(int counter = 0; counter < number; ++counter)
+  {
+    if(counter % 3 == 0 || counter % 5 == 0)
+    {
+      numbers.push_back(counter);
+    }
+  }
+  int sum = std::accumulate(numbers.begin(), numbers.end(), 0);
+  std::cout << sum << "\n";
 }
