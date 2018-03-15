@@ -1,4 +1,6 @@
 #include <iostream>
+#include <numeric>
+#include <vector>
 
 /// Show the answer to Project Euler, problem 1 (https://projecteuler.net/problem=1):
 ///
